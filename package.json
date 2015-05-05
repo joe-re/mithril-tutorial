@@ -8,6 +8,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "coffee": "^1.0.0",
     "mithril": "^0.2.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.7.1",
+    "coffee-script": "^1.9.2",
+    "coffeeify": "^1.1.0",
+    "gulp": "^3.8.11",
+    "gulp-coffee": "^2.3.1",
+    "vinyl-source-stream": "^1.1.0"
   }
 }
