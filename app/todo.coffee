@@ -23,3 +23,6 @@ todo.vm =
       if description()
         todo.vm.list.push(new todo.Todo({description: description()}))
         todo.vm.description('')
+
+# controller
+todo.controller = -> todo.vm.init()
