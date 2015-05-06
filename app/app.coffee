@@ -1,2 +1,2 @@
-require 'mithril'
+window.m = require 'mithril'
 require './todo'

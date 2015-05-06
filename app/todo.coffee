@@ -26,3 +26,22 @@ todo.vm =
 
 # controller
 todo.controller = -> todo.vm.init()
+
+
+# view
+todo.view = ->
+  m("div", [
+    m("input"),
+    m("button", "Add"),
+    m("table", [
+      m("tr", [
+        m("td", [
+          m("input[type=checkbox]")
+        ]),
+        m("td", todo.vm.description()),
+      ])
+    ])
+  ])
+
+# initialize the application
+m.mount(document.getElementById('todo'), {controller: todo.controller, view: todo.view})
